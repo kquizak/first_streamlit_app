@@ -26,7 +26,7 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 streamlit.dataframe(fruits_to_show)
  
 import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+ fruits_to_show[0] )
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+ fruits_to_show.loc[0] )
 #streamlit.text(fruityvice_response.json())
 
 # write your own comment -what does the next line do? 
