@@ -46,4 +46,5 @@ if streamlit.button('mata'):
  my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
  my_data_row = get_fruit_load_list()
  streamlit.dataframe(my_data_row)
-my_cur.execute("insert into fruit_load_list values ('from streamlit')")
+
+ #my_cur.execute("insert into fruit_load_list values ('from streamlit')")
